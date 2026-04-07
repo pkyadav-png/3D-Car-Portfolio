@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Inter:wght@300;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #050505; /* Deep Black */
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+.webgl {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Car text ke peeche rahegi, cool lagta hai */
+    outline: none;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    position: relative;
+    z-index: 2; /* Text car ke upar dikhega */
+    pointer-events: none;
+}
+
+/* Heading Style */
+h1 {
+    font-family: 'Syncopate', sans-serif;
+    font-size: clamp(3rem, 8vw, 6rem); /* Responsive size */
+    line-height: 0.9;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    opacity: 0.8;
+    background: linear-gradient(180deg, #fff 0%, #444 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Subtext Style */
+p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+/* Glass Card (Optional: Agar kisi section mein info deni ho) */
+.glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}

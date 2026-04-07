@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Minor Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <canvas class="webgl"></canvas>
+
+    <section>
+    <div>
+        <p>Introducing</p>
+        <h1>THE BEAST<br>ON ROAD</h1>
+    </div>
+</section>
+
+<section style="justify-content: flex-end;">
+    <div style="text-align: right;">
+        <p>Performance</p>
+        <h1>V8 HYBRID<br>ENGINE</h1>
+    </div>
+</section>
+
+<section>
+    <div class="glass-card">
+        <p>Luxury</p>
+        <h1>CRAFTED TO<br>PERFECTION</h1>
+    </div>
+</section>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.5/dist/lenis.min.js"></script>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
